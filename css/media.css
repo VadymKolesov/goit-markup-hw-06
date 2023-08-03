@@ -1,6 +1,33 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 108px;
+  }
+
+  .section-title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .section-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+
+  .title {
+    margin: 0 auto 36px auto;
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: unset;
+    width: 100%;
   }
 
   .section-team .team-items-list {
@@ -21,18 +48,94 @@
   }
 
   .customers-list {
-    padding: 0 108px;
     gap: 72px 24px;
   }
 
   .customer-item {
     width: calc((100% - 48px) / 3);
   }
+
+  .main-footer .container {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .main-footer .logo-web {
+    margin: 0 0 16px 0;
+  }
+
+  .footer-info-container {
+    align-items: start;
+    margin-bottom: 72px;
+  }
+
+  .social-media-container {
+    align-items: start;
+  }
+
+  .subscribe {
+    align-items: start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .form-label-footer {
+    width: 264px;
+  }
+
+  .section-info .container {
+    padding: 0 16px;
+  }
+
+  .section-info .list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .content-info {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .title-info {
+    text-align: start;
+  }
+}
+
+.modal {
+  width: 408px;
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding: 0 156px;
+  }
+
+  .section-title {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .section-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
+  }
+
+  .title {
+    margin: 0 auto 48px auto;
   }
 
   .section-team {
@@ -55,5 +158,60 @@
 
   .customer-item {
     width: calc((100% - 120px) / 6);
+  }
+
+  .main-footer {
+    padding: 100px 0;
+  }
+
+  .main-footer .container {
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .footer-info-container {
+    margin-right: 120px;
+  }
+
+  .social-media-container {
+    margin-right: 80px;
+  }
+
+  .subscribe-form {
+    gap: 24px;
+  }
+
+  .section-service {
+    display: block;
+  }
+
+  .section-info .container {
+    padding: 0 156px;
+  }
+
+  .card-info {
+    display: flex;
+  }
+
+  .section-info {
+    padding: 120px 0;
+  }
+
+  .section-info .list {
+    flex-wrap: nowrap;
+  }
+
+  .content-info {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .title-info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .description-title-info {
+    font-weight: 400;
   }
 }
