@@ -307,6 +307,10 @@
     padding: 120px 0;
   }
 
+  .section-info .container {
+    padding: 0 15px;
+  }
+
   .section-info .list {
     flex-wrap: nowrap;
   }
