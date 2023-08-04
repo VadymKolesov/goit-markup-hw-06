@@ -1,9 +1,19 @@
+@media screen and (max-width: 428px) {
+  .mob-tel {
+    font-size: 24px;
+  }
+
+  .mob-menu .social-items {
+    gap: 24px;
+  }
+
+  .modal {
+    max-width: 300px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   /* nav */
-
-  .header .container {
-    padding: 0;
-  }
 
   .burger-button {
     display: none;
@@ -49,7 +59,6 @@
 
   .address-header {
     font-style: normal;
-    padding: 12px 0;
   }
 
   .address-header .list {
@@ -65,8 +74,10 @@
   .contacts {
     color: var(--slate);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.16;
+    /* font-size: 16px;
+    line-height: 1.5; */
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -80,7 +91,7 @@
 
   .container {
     max-width: 768px;
-    padding: 0 108px;
+    padding: 0 16px;
   }
 
   .section-title {
@@ -105,7 +116,7 @@
     font-size: 56px;
     line-height: 1.07;
     text-transform: unset;
-    max-width: 100%;
+    max-width: 496px;
   }
 
   .section-team .team-items-list {
@@ -129,6 +140,10 @@
     gap: 72px 24px;
   }
 
+  .customers-box {
+    width: 584px;
+  }
+
   .customer-item {
     width: calc((100% - 48px) / 3);
   }
@@ -138,6 +153,8 @@
     align-items: baseline;
     gap: 24px;
     flex-wrap: wrap;
+    width: 584px;
+    gap: 72px;
   }
 
   .main-footer .logo-web {
@@ -146,7 +163,6 @@
 
   .footer-info-container {
     align-items: start;
-    margin-bottom: 72px;
   }
 
   .social-media-container {
@@ -187,14 +203,14 @@
   width: 408px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
-    padding: 0 156px;
+    max-width: 1158px;
+    padding: 0 15px;
   }
 
   .header .container {
-    padding: 0 156px;
+    padding: 0 15px;
   }
 
   .address-header .list {
@@ -204,6 +220,11 @@
 
   .header .logo-web {
     margin-right: 76px;
+  }
+
+  .contacts {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .section-title {
@@ -244,8 +265,8 @@
     width: calc((100% - 72px) / 4);
   }
 
-  .section-customers {
-    padding: 120px 0;
+  .customers-box {
+    width: 100%;
   }
 
   .customer-item {
@@ -259,6 +280,7 @@
   .main-footer .container {
     gap: 0;
     flex-wrap: nowrap;
+    width: 100%;
   }
 
   .footer-info-container {
@@ -275,10 +297,6 @@
 
   .section-service {
     display: block;
-  }
-
-  .section-info .container {
-    padding: 0 156px;
   }
 
   .card-info {
